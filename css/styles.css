@@ -37,14 +37,15 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     background: #4b63a0;
     color: #1f2937; 
 
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    
 }
 
 main {
@@ -60,31 +61,43 @@ main {
 }
 
 header {
-    background-color: #1e1b4b;
+    background-color: #1e1d4b;
     color: #fff7fb;
     padding: 1rem;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 /* HOME */
+nav {
+    width: 100%;
+    background-color: #6e5a8e;
+}
+
 .navegacion {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     gap: 2rem;
     list-style: none;
-    background-color: #6e5a8e;
+    margin: 0;
     padding: 1rem;
-    justify-items: center;
+    background-color: #6e5a8e;
 }
+
 .navegacion li {
+    margin: 0;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    color: #fff7fb;
-    
 }
-li a {
+
+.navegacion a {
     color: #0a0005;
     text-decoration: none;
 }
+
 .navegacion li:hover {
     background-color: #c6c2cc;
     transition: background-color 0.3s ease;
@@ -92,7 +105,7 @@ li a {
 .parrafos {
     max-width: 600px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
 }
 
 .titulos-productos {
@@ -292,8 +305,9 @@ form{
     }
     
     .navegacion {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     main{
