@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css ">
+    <title>Contacto</title>
+</head>
+<body >
+  <header>
+        <h1 class="h1 contacto"><strong> TIENDA DE ELECTRONICA</strong> </h1>
+              <nav class="navegacion">
+                <li><a href="../pages/index.html">Home</a></li>
+                <!--<li><a href="../pages/productos.html">Productos</a></li>-->
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </nav>
+  </header>
+    <div class="contacto">
+
+        <h1>Contactanos</h1>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+        <main>
+            <div class="fornulario">
+                <form action="https://formspree.io/f/mpqbnaop"
+                     method="POST">
+                    <div>
+                        <label for="name">Nombre y Apellido:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>     
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        
+
+        </main>
+    </div>
+        <footer>
+            <h2>Información de Contacto</h2>
+        <nav>
+         <ul ">
+            <li><strong>Correo electrónico:</strong> info@mitienda.com</li>
+            <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
+            <li><strong>Dirección:</strong> Avenida Corrientes 800, Ciudad Autónoma de Buenos Aires, Argentina</li>
+            <div class="redes-sociales">
+               
+                <li>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <img class="whats" src="../img/whatsapp.png" alt="icono de whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/     tu_usuario" target="_blank">
+                        <img class="insta" src="../img/instagram.png" alt="icono de instagram">
+                    </a>
+                </li>
+            </div>
+         </ul>
+        </nav>
+        </footer>
+       
+   
+</body>
+</html>
