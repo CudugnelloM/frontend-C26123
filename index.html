@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,17 @@
 </head>
 <body>
     <header>
-        <h1><strong> TIENDA DE ELECTRONICA</strong> </h1>
-        <nav >
+        <p class="logo">TIENDA DE ELECTRONICA</p>
+
+        <nav aria-label="Navegación principal">
+
             <ul class="navegacion">
 
                <li><a href="index.html">Home</a></li>
                 <!--<li><a href="../pages/productos.html">Productos</a></li>-->
                 
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/contacto.html" aria-current="page">Contacto</a>
+
             </ul>    
         </nav>
     </header>
@@ -28,35 +32,35 @@
             <h2 class= "titulos-productos">Nuestros Productos</h2>
             <div class="contenedor-tarjetas">
                 <article class="card">
-                    <img class="card-img" src="./img/tv.webp" alt="imagen de Smart TV">
+                    <img class="card-img" src="./img/tv.webp" alt="Smart TV RCA de 55 pulgadas">
                     <h3>Smart TV RCA</h3>
                     <p>Televisión inteligente con pantalla de 55 pulgadas con Android</p>
                     <p>Precio: $499.000</p>
-                    <button class="btn-card">Agregar al carrito</button>
+                    <button class="btn-card" aria-label="Agregar Smart TV">Agregar al carrito</button>
                 </article>
 
                 <article  class="card">
-                    <img class="card-img" src="./img/notebook.webp" alt="imagen de notebook">
+                    <img class="card-img" src="./img/notebook.webp" alt="Notebook RCA con procesador Intel Core i5">
                     <h3>Notebook</h3>
                     <p>Notebook con procesador Intel Core i5, 8GB de RAM y 256GB de almacenamiento</p>
                     <p>Precio: $1.299.000</p>
-                    <button class="btn-card">Agregar al carrito</button>
+                    <button class="btn-card" aria-label="Agregar Notebook">Agregar al carrito</button>
                 </article>
 
                    <article class="card">
-                    <img class="card-img" src="./img/parlante.webp" alt="imagen de parlante">
+                    <img class="card-img" src="./img/parlante.webp" alt="Barra de sonido RCA Bluetooth">
                     <h3>Barra de sonido bluetooth</h3>
                     <p>Barra de sonido inalámbrico con sonido de alta calidad con sistema de sonido envolvente</p>
                     <p>Precio: $89.000</p>
-                    <button class="btn-card">Agregar al carrito</button>
+                    <button class="btn-card" aria-label="Agregar Barra de sonido">Agregar al carrito</button>
                 </article>
 
                    <article class="card">
-                    <img class="card-img" src="./img/impresora.webp" alt="imagen de impresora">
+                    <img class="card-img" src="./img/impresora.webp" alt="Impresora multifunción con conexión Wi-Fi">
                     <h3>Impresora</h3>
                     <p>Impresora multifunción con conexión Wi-Fi</p>
                     <p>Precio: $150.000</p>
-                    <button class="btn-card">Agregar al carrito</button>
+                    <button class="btn-card" aria-label="Agregar Impresora">Agregar al carrito</button>
                 </article>
 
             </div>
@@ -67,18 +71,29 @@
     </main>
     <footer>
         <p>Derechos reservados &copy; 2026</p>
-        <nav >
-            <li>
-                <a href="https://wa.me/1234567890" target="_blank">
-                    <img class="whats" src="./img/whatsapp.png" alt="icono de whatsapp">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/tu_usuario" target="_blank">
-                    <img class="insta" src="./img/instagram.png" alt="icono de instagram">
-                </a>
-            </li>
-        </nav>
+      
+
+            <address>
+                <ul>
+                    <li><strong>Correo electrónico:</strong> info@mitienda.com</li>
+                    <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
+                    <li><strong>Dirección:</strong> Avenida Corrientes 800, Ciudad Autónoma de Buenos Aires, Argentina</li>
+                </ul>
+            </address>
+            <div class="redes-sociales">
+                <h2>Redes Sociales</h2>
+                <ul>
+                    <li>
+                        <a href="https://wa.me/1234567890" target="_blank">
+                            <img class="whats" src="../img/whatsapp.png" alt="icono de whatsapp">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/tu_usuario" target="_blank">
+                            <img class="insta" src="../img/instagram.png" alt="icono de instagram">
+                        </a>
+                    </li>
+                </ul>    
     </footer>
 </body>
 </html>
