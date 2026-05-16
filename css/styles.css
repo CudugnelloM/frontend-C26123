@@ -82,6 +82,7 @@ textarea:focus-visible {
 
 /* Layout */
 header {
+   
     width: 100%;
     padding: 1rem;
     color: var(--color-text-light);
@@ -311,6 +312,27 @@ textarea.form-control,
     border-color: var(--color-accent-dark);
 }
 
+.whats-float {
+    display: flex;
+    position: sticky;
+    bottom: 18%;
+   
+    right: 10px;
+    left: auto;
+    width: 5rem;
+    height: auto;
+    z-index: 1000;
+    margin: 0;
+    transition: transform var(--transition-base);
+    justify-content: center;    
+    align-items: center;
+   
+    animation: latido 1.5s ease-out infinite; 
+    text-decoration: none;
+   
+
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -354,19 +376,26 @@ footer address {
 }
 
 .whats,
-.insta {
+.insta, .face, .tiktok {
     width: 5rem;
     height: auto;
     transition: transform var(--transition-base);
 }
 
 .whats:hover,
-.insta:hover {
+.insta:hover, .face:hover, .tiktok:hover {
     transform: scale(1.2);
 }
 
 /* Responsive */
 @media (min-width: 1200px) {
+    
+    header {
+        height: inherit;
+        position: relative;
+        padding: 1.5rem;
+    }
+
     .card {
         width: calc((100% - 6rem) / 4);
     }
@@ -442,5 +471,14 @@ footer address {
     .redes-sociales,
     .redes-sociales ul {
         flex-direction: column;
+    }
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
     }
 }
