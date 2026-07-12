@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto</title>
+        
+    <title>Carrito</title>
 </head>
-<body >
-  <header>
+<body>
+    <header>
         <h1 class="h1 contacto"><strong> TIENDA DE ELECTRONICA</strong> </h1>
               <nav >
                 <ul class="navegacion">
@@ -22,38 +23,30 @@
                         <span id="contador-carrito">0</span></a>
                     </li>
                 </ul>
-            </nav>
-  </header>
-    <div class="contacto">
+            </nav>  
+    </header>
+    <main>
+        <h1>Carrito de Compras</h1>
 
-        <h1>Contactanos</h1>
-        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
-        <main>
-            <div class="fornulario">
-                <form action="https://formspree.io/f/mpqbnaop"
-                     method="POST">
-                    <div>
-                        <label for="name">Nombre y Apellido:</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                    </div>     
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        
+        <section id="contenedor-carrito" class="contenedor-tarjetas">
 
-        </main>
-    </div>
-     <div class="whats-float">
-            <a href="https://wa.me/1234567890" target="_blank">
-                <img src="../img/whatsapp.png" alt="icono de whatsapp">
-            </a>
+            
+        </section>
+
+        <div class="acciones-carrito" id="acciones-carrito">
+            <button  id="vaciar-carrito" class="btn btn-primary-v">Vaciar Carrito</button>
+            <button  id="finalizar-compra" class="btn btn-primary-s">Finalizar Compra</button>
         </div>
-        <footer>
-            <h2>Información de Contacto</h2>
+
+        <section id="resumen-compra">
+
+            <!-- Aquí se mostrará el resumen de la compra -->
+        </section>
+
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2026</p>
+      
 
             <address>
                 <ul>
@@ -80,13 +73,13 @@
                             <img class="face" src="../img/facebook.png" alt="icono de facebook">
                         </a>
                     </li>
-                </ul> 
-            </div>   
-
-
-    
-        </footer>
-       <script src="../js/contacto.js" type="module"  ></script>
-        <script src="https://jsdelivr.net"></script>
+                  
+                    
+                        
+                </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/carrito.js" type="module"></script>
+   
 </body>
 </html>

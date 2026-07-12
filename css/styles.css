@@ -296,6 +296,36 @@ textarea.form-control,
     min-height: 14rem;
     resize: vertical;
 }
+.btn-primary-s {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: 
+    green;
+    border-color: var(--color-accent-dark);
+    border-radius: var(--radius-md);
+}
+
+.btn-primary-s:hover {
+    background-color: greenyellow;
+    border-color: var(--color-accent-dark);
+}
+
+.btn-primary-v {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: red;
+    border-color: var(--color-accent);
+    border-radius: var(--radius-md);
+}
+
+.btn-primary-v:hover {
+    background-color: darkred;
+    border-color: var(--color-accent-dark);
+}
 
 .btn-primary {
     margin-top: 1.5rem;
@@ -385,6 +415,43 @@ footer address {
 .whats:hover,
 .insta:hover, .face:hover, .tiktok:hover {
     transform: scale(1.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.volver-arriba {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #211d59;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 50%;
+    border: 2px solid white;
+
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.volver-arriba:hover {
+    background-color: #77629b;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-3px);
 }
 
 /* Responsive */

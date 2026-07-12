@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+
     <link rel="stylesheet" href="./css/styles.css">
     <title>Mi Tienda</title>
 </head>
-  <body>
+  <body id="inicio">
     <header>
         <p class="logo">TIENDA DE ELECTRONICA</p>
 
@@ -16,10 +18,19 @@
 
             <ul class="navegacion">
 
-               <li><a href="index.html">Home</a></li>
-                <!--<li><a href="../pages/productos.html">Productos</a></li>-->
+               <li>
+                <a href="index.html">Home</a>
+               </li>
+                                
+                <li>
+                    <a href="./pages/contacto.html" aria-current="page">Contacto</a>
+                </li>
                 
-                <li><a href="./pages/contacto.html" aria-current="page">Contacto</a>
+                <li>
+                    <a href="./pages/carrito.html" class="icono-carrito">
+                        🛒
+                        <span id="contador-carrito">0</span></a>
+                </li>
 
             </ul>    
         </nav>
@@ -30,49 +41,20 @@
         </p>
         <section>
             <h2 class= "titulos-productos">Nuestros Productos</h2>
-            <div class="contenedor-tarjetas">
-                <article class="card">
-                    <img class="card-img" src="./img/tv.webp" alt="Smart TV RCA de 55 pulgadas">
-                    <h3>Smart TV RCA</h3>
-                    <p>Televisión inteligente con pantalla de 55 pulgadas con Android</p>
-                    <p>Precio: $499.000</p>
-                    <button class="btn-card" aria-label="Agregar Smart TV">Agregar al carrito</button>
-                </article>
+            <div id="contenedor-tarjetas" class="contenedor-tarjetas">
 
-                <article  class="card">
-                    <img class="card-img" src="./img/notebook.webp" alt="Notebook RCA con procesador Intel Core i5">
-                    <h3>Notebook</h3>
-                    <p>Notebook con procesador Intel Core i5, 8GB de RAM y 256GB de almacenamiento</p>
-                    <p>Precio: $1.299.000</p>
-                    <button class="btn-card" aria-label="Agregar Notebook">Agregar al carrito</button>
-                </article>
 
-                   <article class="card">
-                    <img class="card-img" src="./img/parlante.webp" alt="Barra de sonido RCA Bluetooth">
-                    <h3>Barra de sonido bluetooth</h3>
-                    <p>Barra de sonido inalámbrico con sonido de alta calidad con sistema de sonido envolvente</p>
-                    <p>Precio: $89.000</p>
-                    <button class="btn-card" aria-label="Agregar Barra de sonido">Agregar al carrito</button>
-                </article>
-
-                   <article class="card">
-                    <img class="card-img" src="./img/impresora.webp" alt="Impresora multifunción con conexión Wi-Fi">
-                    <h3>Impresora</h3>
-                    <p>Impresora multifunción con conexión Wi-Fi</p>
-                    <p>Precio: $150.000</p>
-                    <button class="btn-card" aria-label="Agregar Impresora">Agregar al carrito</button>
-                </article>
-
-               
             </div>
         </section>  
 
+        
+    </main>
         <div class="whats-float">
             <a href="https://wa.me/1234567890" target="_blank">
                 <img src="./img/whatsapp.png" alt="icono de whatsapp">
             </a>
         </div>
-    </main>
+
     <footer>
         <p>Derechos reservados &copy; 2026</p>
       
@@ -107,5 +89,14 @@
                         
                 </ul>    
     </footer>
+
+    <a href="#inicio" class="volver-arriba" aria-label="Volver arriba">
+    ↑
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./js/index.js"></script>
+    
+
   </body>
 </html>
