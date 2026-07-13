@@ -105,11 +105,30 @@ section {
     width: 100%;
 }
 
+.encabezado {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #211f58;
+}
+
+.contenedor-logo {
+    width: min(100%, 1200px);
+    min-height: clamp(280px, 50vh, 520px);
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
-    margin: 2rem 0;
-    font-size: 3rem;
-    font-weight: 800;
-    color: #ffffff;
+    display: block;
+    width: clamp(260px, 40vw, 600px);
+    max-width: 100%;
+    max-height: 480px;
+    height: auto;
+    object-fit: contain;
 }
 
 .parrafos {
